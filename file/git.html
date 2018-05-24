@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VuePress</title>
+    <meta name="description" content="">
+    <link rel="icon" href="/blog.png">
+    
+    <link rel="preload" href="/assets/css/7.styles.7d81af97.css" as="style"><link rel="preload" href="/assets/js/app.63d2d2db.js" as="script"><link rel="preload" href="/assets/js/1.320e2684.js" as="script"><link rel="prefetch" href="/assets/js/3.63791f35.js"><link rel="prefetch" href="/assets/js/0.30d77fd1.js"><link rel="prefetch" href="/assets/js/2.a7df7d53.js"><link rel="prefetch" href="/assets/js/4.d4d4a046.js"><link rel="prefetch" href="/assets/js/5.e307fea1.js"><link rel="prefetch" href="/assets/js/6.7e9ad5ad.js">
+    <link rel="stylesheet" href="/assets/css/7.styles.7d81af97.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="page-main"><div class="component-nav-menu"><div class="placeholder"><span>Fumi`s Blog</span></div><div class="search-wrapper"><div aria-haspopup="listbox" role="combobox" aria-owns="el-autocomplete-3660" background-color="#bbb" class="el-autocomplete"><div class="el-input el-input--prefix"><!----><input type="text" autocomplete="off" valueKey="title" placeholder="请输入内容" fetchSuggestions="function () { [native code] }" triggerOnFocus="true" debounce="300" placement="bottom-start" value="" class="el-input__inner"><span class="el-input__prefix"><i class="el-input__icon el-icon-search"></i></span><!----><!----></div><div role="region" class="el-autocomplete-suggestion el-popper" style="width:;display:none;"><div class="el-scrollbar"><div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default"><ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul></div><div class="el-scrollbar__bar is-horizontal"><div class="el-scrollbar__thumb" style="width:0;transform:translateX(0%);ms-transform:translateX(0%);webkit-transform:translateX(0%);"></div></div><div class="el-scrollbar__bar is-vertical"><div class="el-scrollbar__thumb" style="height:0;transform:translateY(0%);ms-transform:translateY(0%);webkit-transform:translateY(0%);"></div></div></div></div></div></div><ul role="menubar" class="el-menu--horizontal el-menu" style="background-color:;"><li role="menuitem" tabindex="-1" class="el-menu-item" style="color:;border-bottom-color:transparent;background-color:;">
+        首页
+      </li><li role="menuitem" tabindex="-1" class="el-menu-item is-active" style="color:;border-bottom-color:;background-color:;">
+        文档
+      </li></ul></div><div class="page-container"><div class="component-page"><div class="page-content"><div class="component-item-list"></div><div class="content custom"><p>首先在本地建立好文件夹，然后初始化git仓库：</p><pre><code>git   init
+</code></pre><p>接下来在github上面克隆项目：</p><pre><code>git clone   这里写你的项目地址
+</code></pre><p>然后就可以修改，删除，提交代码了</p><h4 id="如果需要在新分支上面开发："><a href="#如果需要在新分支上面开发：" aria-hidden="true" class="header-anchor">#</a> 如果需要在新分支上面开发：</h4><p>查看远程分支：</p><pre><code>git branch -a                 可以查看远程分支，远程分支会用红色表示出来
+</code></pre><p>如果没有找到   可以试试：</p><pre><code>git fetch 
+git pull
+</code></pre><p>或者没有分支的话  可以创建一个分支，用来开发：</p><pre><code>#这一步是建立本地的分支，建立好之后，
+#需要推送一次就会在远端建立一个对应的分支了
+git checkout -b 分支名字     等同于 git branch 分支名字  git checkout 分支名字     
+</code></pre><p>开发完成了之后：我们提交在我们的分支上去：</p><pre><code>git add 文件名字
+</code></pre><p>然后切回我们的主要分支，一般默认为 master：</p><pre><code>git checkout master
+</code></pre><p>最后我们需要合并这两个分支：</p><pre><code>git merge 刚才我们新建的分支名字
+</code></pre><p>合并完成后（记得要<strong>推送</strong>一次），我们就可以删除分支了：</p><pre><code>git branch -d dev
+</code></pre><p>然后再删除远端的分支：</p><pre><code>git push --delete origin 分支名字</code></pre></div></div></div></div></div></div>
+    <script src="/assets/js/1.320e2684.js" defer></script><script src="/assets/js/app.63d2d2db.js" defer></script>
+  </body>
+</html>
